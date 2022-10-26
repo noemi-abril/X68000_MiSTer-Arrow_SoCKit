@@ -84,7 +84,6 @@ module sys_top
 	output		  AUDIO_L,
 	output		  AUDIO_R,
 	output		  AUDIO_SPDIF,
-
 	//SoCkit, DE10-standard, DE1-SoC implementation for on-board Audio CODEC
 	// Audio CODEC
 	inout wire    AUD_ADCLRCK,  // Audio CODEC ADC LR Clock
@@ -94,7 +93,6 @@ module sys_top
 	inout wire    AUD_BCLK,     // Audio CODEC Bit-Stream Clock
 	output wire   AUD_XCK,      // Audio CODEC Chip Clock
 	output wire   AUD_MUTE,		// Audio CODEC Mute (active low)
-
 	// I2C Audio CODEC
 	inout wire    AUD_I2C_SDAT,     // I2C Data
 	output wire   AUD_I2C_SCLK,     // I2C Clock
@@ -122,13 +120,13 @@ module sys_top
 	inout         SDCD_SPDIF,
 	output        IO_SCL,
 	inout         IO_SDA,
-/*
+
 	////////// ADC //////////////
-	output        ADC_SCK,
-	input         ADC_SDO,
-	output        ADC_SDI,
-	output        ADC_CONVST,
-*/
+	//output        ADC_SCK,
+	//input         ADC_SDO,
+	//output        ADC_SDI,
+	//output        ADC_CONVST,
+
 	////////// MB KEY ///////////
 	input   [1:0] KEY,
 
